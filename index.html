@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Converter – Convert a Number to Any Base</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="elements">
+            <div class="square sq1"></div>
+            <div class="square sq2"></div>
+            <div class="square sq3"></div>
+        </div> 
+        <div class="container-block">
+            <div class="container-inner">
+                <div class="container-front">
+
+                </div>
+            </div>
+            <h1>Number System Conversion</h1>
+            <div class="form-box">
+                <form action="#" >
+                    <label for="from-base">From Base: </label>
+                    <select name="from-base-form" id="from-base" required>
+                      <option value="#" selected>Choose From Base: </option>
+                      <option value="from-base-coded">Base-Coded</option>
+                      <option value="from-binary-coded-decimal">Binary-Coded Decimal</option>
+                      <option value="from-roman-numeral">Roman Numeral</option>
+                    </select>
+                </form>
+                <form action="#">
+                    <label for="to-base">To Base: </label>
+                    <select name="to-base-form" id="to-base" required>
+                      <option value="#" selected>Choose To Base: </option>
+                      <option value="to-base-coded">Base-Coded</option>
+                      <option value="to-binary-coded-decimal">Binary-Coded Decimal</option>
+                      <option value="to-roman-numeral">Roman Numeral</option>
+                    </select>
+                </form>
+            </div>
+            <div class='base-enter'>
+                <div class="base-num">
+                    <input type='text' name='base1-enter' value="10" placeholder="from base:" class="bases hide" id="first-enter" required>
+                    <p class="warning hide"> *invalid enter</p>
+                </div>
+                <div class="base-num">
+                    <input type='text' name='base2-enter' value="10" placeholder="to base:" class="bases hide" id="second-enter" required>
+                    <p class="warning hide"> *invalid enter</p>
+                </div>
+            </div>
+            <div class="show-result">
+                <div class="input-output">
+                    <form>
+                        <input type="text" placeholder="Enter your number here..." class="interaction-form" id="user-number" required>
+                        <p class="warning hide"> *invalid enter</p>
+                    </form>
+                </div>
+                <div class="input-output">
+                    <input type="submit" value="Convert" id="sub-button">
+                </div>
+                <div class="input-output">
+                    <form>
+                        <input id="converted-num" type="text" placeholder="Converted number here..." class="interaction-form">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js" type="module"></script>
+</body>
+</html>
